@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Biblioteca</h1>
+        <button type="button">Iniciar sesión</button>
+
+    </header>
+
+    <div class="container">
+        <div class="modal-container">
+            <div id="add-book-modal">
+                <form action="" class="add-book-form">
+                    <input type="text" name="book-title" id="title" placeholder="Title">
+                    <input type="text" name="book-author" id="author" placeholder="Author">
+                    <input type="number" name="book-pages" id="pages" placeholder="Pages">
+
+                    <button type="button" onclick="Book()">Añadir libro</button>
+                </form>
+            </div>
+        </div>
+        <div class="books-container"></div>  
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,97 @@
+:root{
+    --button: #1265fb;
+    --button-hover: #00A9FF;
+    --background: #eeeeee;
+    --text-button: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+button{
+    background-color: var(--button);
+    color: var(--text-button);
+    border: none;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 160ms;
+    background-color: var(--button-hover);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    background-color: var(--background);
+    padding: 20px;
+}
+
+.modal-container,
+.books-container {
+    margin: 20px 0; /* Margen superior e inferior de 10px para ambos contenedores */
+}
+
+
+.add-book-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#add-book-modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 250px;
+    padding: 1rem;  
+}
+
+#add-book-modal input{
+    width: 100%;
+    height: 30px;
+    margin: 0.2rem;
+}
+
+.books-container{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el contenido */
+}
+
+.card-title, .card-author, .card-pages {
+    margin: 8px; /* Agrega un margen alrededor del contenido */
+}
